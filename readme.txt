@@ -4,3 +4,5 @@ TODO:
 -M�glicherweise sp�ter Vue oder Angular verwenden, um Struktur zu verbessern
 -Index aufteilen?
 -Allgemeines Refactoring
+-Kommentare entfernen
+-Überflüssigen Code entfernen
