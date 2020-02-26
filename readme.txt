@@ -6,3 +6,4 @@ TODO:
 -Allgemeines Refactoring
 -Kommentare entfernen
 -Überflüssigen Code entfernen
+-BOOTSTRAP AUF WEBVERSION UMSTELLEN
