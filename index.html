@@ -27,6 +27,7 @@
 
     .navbar {
       position: absolute;
+      box-shadow: 0 4px 4px -4px rgba(0, 0, 0, .5);
       z-index: 1;
       width: 100%;
       background: rgba(255, 255, 255, 0.3);
@@ -36,6 +37,10 @@
     .navbar-brand {
       font-family: chanceCursive;
       font-size: 300%;
+    }
+
+    .navbar-sub {
+      font-weight: bold;
     }
 
     .blur {
@@ -83,11 +88,10 @@
       -ms-transform: rotate(90deg);
       transform: rotate(90deg);
     }
-
   </style>
 
-   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-   <script src="jquery-3.4.1.js"> </script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="jquery-3.4.1.js"> </script>
   </script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="bootstrap-4.0.0-dist\js\bootstrap.min.js"></script>
@@ -108,10 +112,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link navbar-sub" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="vereineEtc.html">Vereine & Verbände</a>
+            <a class="nav-link navbar-sub" href="vereineEtc.html">Vereine & Verbände</a>
           </li>
         </ul>
         <!-- <form class="form-inline my-2 my-lg-0">
@@ -157,31 +161,8 @@
     <!-- Grid row -->
     <div class="row">
 
-      <!-- Grid column -->
-      <div class="col-md-6 mt-md-0 mt-3">
-
-        <!-- Content -->
-        <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
-          repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
-          harum esse fugiat. Itaque, culpa?</p>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none pb-3">
-
-      <!-- Grid column -->
-      <div class="col-md-6 mb-md-0 mb-3">
-
-        <!-- Content -->
-        <h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
-          commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
-          excepturi hic.</p>
-
-      </div>
-      <!-- Grid column -->
+      <!-- Content -->
+      <p></p>
 
     </div>
     <!-- Grid row -->
@@ -190,8 +171,7 @@
   <!-- Footer Text -->
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+  <div class="footer-copyright text-center py-3">Kontaktdaten kommen bald.
   </div>
   <!-- Copyright -->
 

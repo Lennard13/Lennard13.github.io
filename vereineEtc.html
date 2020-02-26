@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Bootstrap 101 Template</title>
+  <title>Kirchboitzen</title>
   <!-- Bootstrap -->
   <link rel="stylesheet" href="bootstrap-4.0.0-dist\css\bootstrap.min.css">
   <style type="text/css">
@@ -27,15 +27,20 @@
 
     .navbar {
       position: absolute;
+      box-shadow: 0 4px 4px -4px rgba(0, 0, 0, .5);
       z-index: 1;
       width: 100%;
-      background: rgba(255, 255, 255, 0.3);
+      background: rgba(255, 255, 255, 1);
       backdrop-filter: blur(2px);
     }
 
     .navbar-brand {
       font-family: chanceCursive;
       font-size: 300%;
+    }
+
+    .navbar-sub {
+      font-weight: bold;
     }
 
     .blur {
@@ -49,11 +54,6 @@
       z-index: -1;
     }
 
-    .jumbotron {
-      background: none;
-      /* Transparent background */
-    }
-
     footer {
       position: absolute;
       bottom: 0;
@@ -62,21 +62,27 @@
       border-top: 3px solid rgb(197, 197, 197);
     }
 
-    .largeText {
-      font-size: 150%;
+    .subHeader {
+      font-size: 100%;
     }
 
-    .img {
-      object-fit: cover;
-      height: 1000px !important;
+    .top-buffer {
+      margin-top: 80px;
+      margin-bottom: 20px;
     }
 
-    .rotate90 {
-      -webkit-transform: rotate(90deg);
-      -moz-transform: rotate(90deg);
-      -o-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      transform: rotate(90deg);
+    .haupt {
+      z-index: 2;
+      margin-left: 20px;
+    }
+
+    .verein {
+      background: rgb(197, 197, 197);
+      border-radius: 15px;
+    }
+
+    vName {
+      font-weight: bold;
     }
   </style>
 
@@ -90,8 +96,8 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light">
-    <div class="container-fluid the-navbar">
+  <nav class="navbar shadow-lg navbar-fixed-top navbar-expand-lg navbar-light">
+    <div class=container-fluid the-navbar">
       <a class="navbar-brand" href="#">Kirchboitzen</a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -102,10 +108,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link navbar-sub" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="vereineEtc.html">Vereine & Verbände</a>
+            <a class="nav-link navbar-sub" href="vereineEtc.html">Vereine & Verbände</a>
           </li>
         </ul>
         <!-- <form class="form-inline my-2 my-lg-0">
@@ -118,20 +124,32 @@
   </nav>
   <!-- Navbar -->
 
-  <div class="jumbotron"  >
-    <div class="container">
-      <h1>
-        <span class="largeText" align="left">Vereine und Verbände</span>
-      </h1>
+  <haupt class="container-fluid haupt">
+    <div class="row offset">
+      <div class="col offset-1">
+        <h1 class="top-buffer">
+          <span class="subHeader">Vereine und Verbände</span>
+        </h1>
+      </div>
     </div>
-  </div>
-  <!-- Container für links -->
-  <div class="container-fluid">
-    <div class="verein">
 
+    <div class="row">
+      <div class="col1 offset-1">
+        <div class="verein col offset-1">
+          <vName>Evangelische Jugend Kirchboitzen</vName>
+          <div class="col">
+            <vDaten>
+              Pastor van Veldhuizen<br>
+              Tel: 0 51 66 / 2 44<br>
+              Kirchboitzen 32<br>
+              29664 Walsrode<br>
+            </vDaten>
+          </div>
+        </div>
+        <div class="col-5"></div>
+      </div>
     </div>
-  </div>
-
+  </haupt>
 
   <!-- <div class = "linkinfo">
   </div>
@@ -151,32 +169,12 @@
     <!-- Grid row -->
     <div class="row">
 
-      <!-- Grid column -->
-      <div class="col-md-6 mt-md-0 mt-3">
-
-        <!-- Content -->
-        <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
-          repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
-          harum esse fugiat. Itaque, culpa?</p>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none pb-3">
-
-      <!-- Grid column -->
-      <div class="col-md-6 mb-md-0 mb-3">
-
-        <!-- Content -->
-        <h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
-          commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
-          excepturi hic.</p>
-
-      </div>
-      <!-- Grid column -->
-
+      <!-- Content -->
+      <!-- <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
+        repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
+        harum esse fugiat. Itaque, culpa?</p>
+ -->
     </div>
     <!-- Grid row -->
 
@@ -184,8 +182,8 @@
   <!-- Footer Text -->
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+  <div class="footer-copyright text-center py-3">Kontaktdaten kommen bald.
+
   </div>
   <!-- Copyright -->
 
