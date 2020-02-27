@@ -7,3 +7,8 @@ TODO:
 -Kommentare entfernen
 -Überflüssigen Code entfernen
 -BOOTSTRAP AUF WEBVERSION UMSTELLEN
+-Footer Subseiten:
+    -Impressum
+    -Datenschutz
+    -Cookie Richtlinien
+    -(Siehe Domkreuger)
